@@ -996,12 +996,12 @@ const CATEGORIES = [
     ]},
   { id:'series_circuits', name:'Series Circuits', icon:'⛓️', iconColor:'#32cd32',
     items:[
-      q('What is the rule for total resistance (R_T) in a series circuit?', 'Total resistance is the sum of all individual resistances (R_T = R1 + R2 + R3...).', ['Series', 'Formula']),
+      q('What is the rule for total resistance (RT) in a series circuit?', 'Total resistance is the sum of all individual resistances (RT = R1 + R2 + R3...).', ['Series', 'Formula']),
       q('What is the rule for current (I) in a series circuit?', 'Current is the same through all components in the circuit.', ['Series', 'Principles']),
       q('Three resistors (5Ω, 10Ω, 15Ω) are in series. What is the total resistance?', '30 Ohms (5 + 10 + 15)', ['Series', 'Calculation']),
       q('What happens to the total current in a series circuit if one component "opens"?', 'The current drops to zero for the entire circuit.', ['Series', 'Troubleshooting', 'Faults']),
       q('What is the rule for total voltage in a series circuit?', 'The total voltage from the source is divided among the components (it adds up).', ['Series', 'Principles', 'KVL']),
-      q('A 28V source powers two 7Ω resistors in series. What is the current?', '2 Amps (R_T = 7+7=14Ω; I = 28V/14Ω = 2A)', ['Series', 'Calculation']),
+      q('A 28V source powers two 7Ω resistors in series. What is the current?', '2 Amps (RT = 7+7=14Ω; I = 28V/14Ω = 2A)', ['Series', 'Calculation']),
       q('In a series circuit, which resistor drops the most voltage?', 'The resistor with the highest resistance value.', ['Series', 'Principles']),
       q('Two 10Ω resistors are in series with a 20V source. What is the voltage drop across *one* of them?', '10 Volts (R_T = 20Ω; I = 1A; V_drop = 1A * 10Ω = 10V)', ['Series', 'Calculation']),
       q('What is a "voltage divider"?', 'A series circuit used to produce a lower voltage at the junction between components.', ['Series', 'Components']),
@@ -1010,15 +1010,15 @@ const CATEGORIES = [
   { id:'parallel_circuits', name:'Parallel Circuits', icon:'📊', iconColor:'#ffa500',
     items:[
       q('What is the rule for voltage in a parallel circuit?', 'Voltage is the same across all components (branches) in the circuit.', ['Parallel', 'Principles']),
-      q('What is the rule for total current (I_T) in a parallel circuit?', 'Total current is the sum of the currents in all the individual branches (I_T = I1 + I2 + ...).', ['Parallel', 'Formula', 'KCL']),
+      q('What is the rule for total current (IT) in a parallel circuit?', 'Total current is the sum of the currents in all the individual branches (I_T = I1 + I2 + ...).', ['Parallel', 'Formula', 'KCL']),
       q('What happens to total resistance in a parallel circuit if you add another branch?', 'Total resistance *decreases*.', ['Parallel', 'Principles']),
-      q('Two 10Ω resistors are in parallel. What is the total resistance (R_T)?', '5 Ohms (R_T = (R1*R2)/(R1+R2) or 1/(1/10 + 1/10))', ['Parallel', 'Calculation']),
+      q('Two 10Ω resistors are in parallel. What is the total resistance (RT)?', '5 Ohms (RT = (R1*R2)/(R1+R2) or 1/(1/10 + 1/10))', ['Parallel', 'Calculation']),
       q('If one branch of a parallel circuit "opens," what happens to the other branches?', 'They are unaffected and continue to operate normally.', ['Parallel', 'Troubleshooting', 'Faults']),
       q('Two 10A lights are wired in parallel to a 28V bus. What is the total current drawn?', '20 Amps (10A + 10A)', ['Parallel', 'Calculation']),
       q('What happens to total current if one branch in a parallel circuit "shorts"?', 'Total current becomes extremely high as the shorted branch draws almost all current, tripping the breaker.', ['Parallel', 'Troubleshooting', 'Faults']),
       q('The total resistance in a parallel circuit is always...', '...less than the smallest individual branch resistance.', ['Parallel', 'Principles']),
       q('Why are most aircraft components (lights, LRUs) wired in parallel?', 'So that if one component fails (opens), the others continue to receive power.', ['Parallel', 'Application']),
-      q('Three 30Ω resistors are in parallel. What is the total resistance?', '10 Ohms (For equal resistors, R_T = R / N = 30Ω / 3)', ['Parallel', 'Calculation'])
+      q('Three 30Ω resistors are in parallel. What is the total resistance?', '10 Ohms (For equal resistors, RT = R / N = 30Ω / 3)', ['Parallel', 'Calculation'])
     ]},
   { id:'kirchhoff_faults', name:'Kirchhoff\'s Laws & Fault Diagnosis', icon:'🔎', iconColor:'#b22222',
     items:[
@@ -1031,7 +1031,7 @@ const CATEGORIES = [
       q('KCL is the principle behind how what type of circuit works?', 'A parallel circuit, where the branch currents add up to the total current.', ['Kirchhoff\'s Laws', 'KCL', 'Parallel']),
       q('A technician reads 28V at the circuit breaker but 0V at the LRU. What is the most likely fault?', 'An "open circuit" in the wiring between the breaker and the LRU.', ['Troubleshooting', 'Faults', 'Open Circuit']),
       q('A 5A breaker trips immediately when the avionics master is turned on. What is the most likely fault?', 'A "short circuit" in that component or its wiring.', ['Troubleshooting', 'Faults', 'Short Circuit']),
-      q('A junction has 5A coming in, 2A going to one light, and 3A going to another. This demonstrates what law?', 'Kirchhoff\'s Current Law (KCL), where 5A_in = 2A_out + 3A_out.', ['Kirchhoff\'s Laws', 'KCL', 'Calculation'])
+      q('A junction has 5A coming in, 2A going to one light, and 3A going to another. This demonstrates what law?', 'Kirchhoff\'s Current Law (KCL), where 5A in = 2A out + 3A out.', ['Kirchhoff\'s Laws', 'KCL', 'Calculation'])
     ]}
 ];
 // Motivational messages array
